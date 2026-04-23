@@ -10,4 +10,14 @@ public class Tile {
     private ArrayList<String> tags;
     private String description;
     
-}
+        public Tile(int x, int y , boolean upwall, boolean downwall, boolean leftwall, boolean rightwall) {
+            this.x = x;
+            this.y = y;
+            this.upwall = upwall;
+            this.downwall = downwall;
+            this.leftwall = leftwall;
+            this.rightwall = rightwall;
+            this.tags = new ArrayList<>();
+            this.description = "";
+        }
+    }
